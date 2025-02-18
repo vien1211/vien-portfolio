@@ -2,7 +2,7 @@ import Contact from "./components/Contact"
 import Info from "./components/Info"
 import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
-import Skill from "./components/skill"
+import Skill from "./components/Skill"
 
 function App() {
   return (

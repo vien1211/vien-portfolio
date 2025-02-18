@@ -10,14 +10,14 @@ const Skill = () => {
     }
 
     const icons = [
-        { component: BiLogoReact, color: '#61DAFB' }, // React (Xanh nhạt)
-        { component: BiLogoHtml5, color: '#E34F26' }, // HTML5 (Cam)
-        { component: BiLogoJavascript, color: '#F7DF1E' }, // JavaScript (Vàng)
-        { component: BiLogoTailwindCss, color: '#38BDF8' }, // Tailwind (Xanh dương)
-        { component: BiLogoBootstrap, color: '#7952B3' }, // Bootstrap (Tím)
-        { component: BiLogoNodejs, color: '#68A063' }, // Node.js (Xanh lá)
-        { component: BiLogoMongodb, color: '#4DB33D' }, // MongoDB (Xanh lá cây)
-        { component: BiLogoPhp, color: '#777BB4' }, // PHP (Xanh tím)
+        { component: BiLogoReact, color: '#61DAFB' }, 
+        { component: BiLogoHtml5, color: '#E34F26' }, 
+        { component: BiLogoJavascript, color: '#F7DF1E' }, 
+        { component: BiLogoTailwindCss, color: '#38BDF8' }, 
+        { component: BiLogoBootstrap, color: '#7952B3' },
+        { component: BiLogoNodejs, color: '#68A063' }, 
+        { component: BiLogoMongodb, color: '#4DB33D' }, 
+        { component: BiLogoPhp, color: '#777BB4' },
         { component: 'figma' } 
     ]
 
