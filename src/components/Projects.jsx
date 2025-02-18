@@ -178,7 +178,7 @@ const Projects = () => {
                                     src={project.cover}
                                     alt={`Cover ${project.title}`}
                                     onContextMenu={(e) => e.preventDefault()}
-                                    className="w-full h-[300px] object-cover rounded-2xl transition-all duration-300 hover:scale-105 md:w-[250px] md:h-[180px] shadow-lg"
+                                    className="w-full h-full object-cover rounded-2xl transition-all duration-300 hover:scale-105 md:w-[250px] md:h-[180px] shadow-lg"
                                 />
 
                                 <div className="flex flex-col w-full">
