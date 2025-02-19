@@ -39,7 +39,7 @@ import help from '/images_4/Help.png';
 import setting from '/images_4/Setting.png';
 
 import cover5 from '/images_5/cover.png';
-import i1 from '/images_5/i1.png';
+import w from '/images_5/w.png';
 
 import { FaChevronRight, FaChevronUp } from 'react-icons/fa';
 
@@ -50,12 +50,13 @@ const projectList = [
         id: 1,
         title: "My Portfolio",
         year: "Feb 2025",
-        description: "This website is professionally introduce myself and provide comprehensive information about me, including my personal profile, professional skills, work experience, and the projects I have worked on. All of this is the result of my academic learning in school as well as my self-study efforts. <br> <br> This website is built using React combined with TailwindCSS and Framer Motion, creating a modern, optimized, and flexible user interface. The entire project is deployed on the Vercel platform, ensuring high performance and fast loading speeds.",
+        description: "This website is introduce myself and provide comprehensive information about me, including my personal profile, professional skills, work experience, and the projects I have worked on. All of this is the result of my academic learning in school as well as my self-study efforts. <br> <br> This website is built using React combined with TailwindCSS and Framer Motion, creating a modern, optimized, and flexible user interface. The entire project is deployed on the Vercel platform, ensuring high performance and fast loading speeds.",
         cover: cover5,
         images: [
-            { src: i1, caption: "If you have any feedback or questions, feel free to reach out to me. I'm always open to discussions and collaborations!" }
+            { src: w, caption: "If you have any feedback or questions, feel free to reach out to me. I'm always open to discussions and collaborations!" }
         ],
-        techStack: ["ReactJs", "Framer Motion", "Tailwind CSS"]
+        techStack: ["ReactJs", "Framer Motion", "Tailwind CSS"],
+        link: "https://vien-portfolio.vercel.app"
     },
     {
         id: 2,
@@ -78,7 +79,7 @@ const projectList = [
             { src: chat, caption: "Chatbot and real-time chat with the admin" }
         ],
         video: "videos_1/Vieen's_Store_Admin_Dashboard.mp4",
-        techStack: ["MERN Stack","Javascript", "Tailwind CSS", "Figma", "HTML"]
+        techStack: ["MERN Stack", "Javascript", "Tailwind CSS", "Figma", "HTML"]
     },
 
     {
@@ -87,14 +88,14 @@ const projectList = [
         year: "Apr 2024",
         description: "Milk Tea Shop Management App is a group 2 members done in Mobile Development subject, a mobile application designed to provide ordering, product management and customer interaction in an intuitive and easy-to-use way. <br> <br> Using Flutter to develop the application and Firebase to store user data, manage login and authentication, as well as manage product and order data. The application will create an easy and convenient shopping experience with a beautiful, pleasant and easy-to-use interface.",
         cover: cover3,
-        
+
         images: [
             { src: signin2, caption: "Users enter their registered email and password to log into the application. To create an account, users must enter their email, password, and confirm their password. Administrators use the provided email and password to log into the application." },
             { src: home, caption: "The home page interface displays advertising images and all products for users to choose products. Users can add products to the cart right on the Home page and can add products to the list of favorite products. On the AppBar, users can choose how to display products such as: “All Products” or “Only favorite products”, not only that, the AppBar also has a “Cart” for users to access the cart. BottomNavigationBar, helps users easily move back and forth to view order information, personal page and home page." },
             { src: detail_addcart, caption: "The interface displays detailed product information, helping users easily view product information, update quantity and add products to the cart to place an order. Then users can go to the cart to view the products that the user has added to the cart, and users can “Order Now” those products." },
             { src: manage, caption: "Administrators can add, edit, and delete products here." },
         ],
-        
+
         techStack: ["Dart", "Flutter", "Firebase"]
     },
     {
@@ -222,6 +223,17 @@ const Projects = () => {
                                         </a>
                                     )}
 
+                                    {openProject[project.id] && project.link && (
+                                        <a
+                                            href={project.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-green-700 cursor-pointer hover:underline mt-2"
+                                        >
+                                            🔗 Link Deploy 
+                                        </a>
+                                    )}
+
                                     <ScrollReveal>
                                         <div className="flex flex-wrap gap-2 mt-2">
                                             {project.techStack.map((tech, index) => (
@@ -247,7 +259,7 @@ const Projects = () => {
                                     transition={{ duration: 0.5 }}
                                 >
                                     <p className="text-gray-700" dangerouslySetInnerHTML={{ __html: project.description }}></p>
-                                    
+
                                     <div className="grid grid-cols-1 gap-4 mt-4">
                                         {project.images.map((img, index) => (
                                             <div key={index} className="flex flex-col">
@@ -265,7 +277,7 @@ const Projects = () => {
                                     {project.video && (
                                         <div className="w-full flex flex-col justify-center items-center mt-4">
                                             <video className="w-full max-w-[700px] rounded-xl shadow-md" controls controlsList='nodownload' onContextMenu={(e) => e.preventDefault()} muted>
-                                                <source src={project.video} type="video/mp4"/>
+                                                <source src={project.video} type="video/mp4" />
                                                 Trình duyệt của bạn không hỗ trợ video.
                                             </video>
                                             <p className="text-sm text-gray-500 mt-2">This is Admin Dashboard</p>

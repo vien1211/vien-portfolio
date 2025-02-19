@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import ctulogo from '../assets/logo-ctu.png'
 import ivslogo from '../assets/ivslogo.webp'
@@ -14,8 +14,8 @@ const Info = () => {
     }
 
     return (
-        <div id="home" className='flex min-h-screen w-full items-center justify-center py-28 md:py-32'>
-            <div className='flex flex-col items-center justify-center gap-10 text-10'>
+        <div id="info" className='relative flex min-h-screen w-full items-center justify-center py-28 md:py-32'>
+            <div className='flex relative flex-col items-center justify-center gap-10 text-10'>
                 <motion.div
                     variants={variants}
                     initial="hidden"
@@ -36,9 +36,11 @@ const Info = () => {
                 >
                     <h1 style={{ fontFamily: "'Orbitron', sans-serif" }} className='bg-gradient-to-r from-green-500 to-orange-400 bg-clip-text text-transparent opacity-80 text-4xl font-semibold transition-all duration-300 hover:opacity-100'>Truong Ngoc Vien</h1>
                     <h3 style={{ fontFamily: "'Orbitron', sans-serif" }} className='bg-gradient-to-r from-green-300 to-yellow-400 bg-clip-text text-transparent opacity-80 text-3xl font-semibold transition-all duration-300 hover:opacity-100 mt-1'>Fresher</h3>
-                    <p className='md:text-base text-pretty text-sm mt-1'>Hi, I'm Vien! I've recently graduated with a degree in Information Technology from Can Tho University. I'm seeking an opportunity to work as an IT Fresher. I am passionate about website design and development, with a particular focus on creating responsive designs. Now, I am eager to apply my passion and knowledge in a practical environment and am willing to learn, work hard, and make the best positive contribution to the company.</p>
+                    <p className='md:text-base text-pretty text-gray-700 text-sm mt-1'>Hi, I'm Vien! I've recently graduated with a degree in Information Technology from Can Tho University. I'm seeking an opportunity to work as an IT Fresher. I am passionate about website design and development, with a particular focus on creating responsive designs. Now, I am eager to apply my passion and knowledge in a practical environment and am willing to learn, work hard, and make the best positive contribution to the company.</p>
                 </motion.div>
             </div>
+
+            
 
             <motion.div
                 variants={variants}
@@ -46,16 +48,18 @@ const Info = () => {
                 whileInView="visible"
                 viewport={{ once: false }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                className='absolute flex bg-[#D0D9D3] left-5 md:left-35 top-[15%] md:top-[18%] p-2 rounded-full shadow-lg
+                className='absolute flex bg-[#D0D9D3] left-5 md:left-25 top-[15%] md:top-[18%] p-2 rounded-full shadow-lg
                group transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-[#6D8777]'
             >
                 <img src={ctulogo} className='w-12 md:w-16 rounded-full bg-white p-2' />
+                
                 <div className='hidden lg:flex flex-col items-start mx-3 justify-center 
                     group-hover:block lg:group-hover:flex transition-opacity duration-300'>
                     <span className='text-sm lg:text-xl text-[#45625e] font-semibold flex flex-col'>Can Tho University</span>
                     <span className='text-xs lg:text-sm text-gray-600'>Information Technology</span>
                 </div>
             </motion.div>
+       
 
 
             <motion.div
@@ -64,7 +68,7 @@ const Info = () => {
                 whileInView="visible"
                 viewport={{ once: false }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className='absolute flex bg-[#D0D9D3] left-5 md:left-30 top-[28%] md:top-[35%] p-2 rounded-full shadow-lg 
+                className='absolute flex bg-[#D0D9D3] left-5 md:left-20 top-[28%] md:top-[35%] p-2 rounded-full shadow-lg 
                group transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-[#6D8777]'
             >
                 <img src={ivslogo} className='w-12 md:w-16 rounded-full bg-white p-1' />
@@ -81,7 +85,7 @@ const Info = () => {
                 whileInView="visible"
                 viewport={{ once: false }}
                 transition={{ duration: 0.8, delay: 1 }}
-                className='absolute flex bg-[#D0D9D3] left-5 md:left-40 top-[41%] md:top-[52%] p-2 rounded-full shadow-lg 
+                className='absolute flex bg-[#D0D9D3] left-5 md:left-35 top-[41%] md:top-[52%] p-2 rounded-full shadow-lg 
                group transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-[#6D8777]'
             >
                 <img src={toeiclogo} className='w-13 md:w-16 rounded-full bg-white' />
@@ -98,7 +102,7 @@ const Info = () => {
                 whileInView="visible"
                 viewport={{ once: false }}
                 transition={{ duration: 0.8, delay: 1 }}
-                className='absolute flex bg-[#D0D9D3] right-5 md:right-30 top-[15%] md:top-[18%] p-2 rounded-full shadow-lg 
+                className='absolute flex bg-[#D0D9D3] right-5 md:right-20 top-[15%] md:top-[18%] p-2 rounded-full shadow-lg 
                group transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-[#6D8777]'
             >
                 <a
@@ -128,7 +132,7 @@ const Info = () => {
                 whileInView="visible"
                 viewport={{ once: false }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                className="absolute flex bg-[#D0D9D3] right-5 md:right-25 top-[28%] md:top-[35%] p-2 rounded-full shadow-lg
+                className="absolute flex bg-[#D0D9D3] right-5 md:right-15 top-[28%] md:top-[35%] p-2 rounded-full shadow-lg
                transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:shadow-[#6D8777]"
             >
                 <a
@@ -159,7 +163,7 @@ const Info = () => {
                 whileInView="visible"
                 viewport={{ once: false }}
                 transition={{ duration: 0.8, delay: 1 }}
-                className='absolute flex bg-[#D0D9D3] right-5 lg:right-60 md:right-35 top-[41%] md:top-[52%] p-2 rounded-full shadow-lg 
+                className='absolute flex bg-[#D0D9D3] right-5 lg:right-50 md:right-35 top-[41%] md:top-[52%] p-2 rounded-full shadow-lg 
                group transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-[#6D8777]'
             >
                 <a
@@ -182,6 +186,10 @@ const Info = () => {
                     </div>
                 </a>
             </motion.div>
+
+
+
+            
         </div>
     )
 }

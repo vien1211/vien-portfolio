@@ -11,9 +11,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-10 gap-12 flex w-full md:w-fit md:top-2 md:rounded-full bg-white/70 items-center justify-between md:border md:border-red-200 border-b border-b-amber-500 px-13 py-3 text-gray-700 backdrop-blur-md md:justify-evenly shadow-xl">
+    <nav className="fixed top-0 z-10 gap-12 flex w-full md:w-fit md:top-4 md:rounded-full bg-white/70 items-center justify-between md:border md:border-red-200 border-b border-b-amber-500 px-13 py-3 text-gray-700 backdrop-blur-md md:justify-evenly shadow-xl">
       <a
-        href="#home"
+        href="#welcome"
         style={{ fontFamily: "'Orbitron', sans-serif" }}
         className=" bg-gradient-to-r from-green-500 to-orange-400 bg-clip-text text-transparent opacity-80 text-2xl font-semibold transition-all duration-300 hover:opacity-100"
       >
@@ -24,7 +24,7 @@ const Navbar = () => {
       <ul className="hidden md:flex gap-8">
         <li className="group transition-all duration-300 ease-in-out hover:scale-110">
           <a
-            href="#home"
+            href="#info"
             className="cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100"
           >
             Home
@@ -74,7 +74,7 @@ const Navbar = () => {
           <ul className="flex gap-8 justify-center">
             <li>
               <a
-                href="#home"
+                href="#info"
                 className="group relative cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100"
               >
                 <GoHome className="text-2xl opacity-70 transition-all duration-300 group-hover:opacity-100 hover:scale-110" />
