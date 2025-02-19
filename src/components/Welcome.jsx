@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import { motion } from "framer-motion";
 
 import { LiaAngleDoubleDownSolid } from 'react-icons/lia';
-import { GiBeveledStar } from 'react-icons/gi';
 
 const Welcome = () => {
     useEffect(() => {

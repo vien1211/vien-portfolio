@@ -3,7 +3,7 @@ import Info from "./components/Info"
 import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
 import Skill from "./components/Skill"
-import Welcome from "./components/welcome"
+import Welcome from "./components/Welcome"
 
 function App() {
   return (
