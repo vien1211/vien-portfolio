@@ -122,7 +122,7 @@ const projectList = [
         year: "May 2023",
         description: "This Group project (4 members) developed in the subject named “Human-Computer Interaction”, use the Figma to design the interface. In this project, the system describes the map viewing and music listening activities of the vehicle's infotainment system. <br> <br> My responsibilities include creating components for Play/Pause, Favorites, Sound Bar Adjustment, Song Search, and Spinning Disc Animation on the “Music” page, as well as designing the “Help Center”, “Music” page.",
         cover: cover4,
-        link_prototype: "https://www.figma.com/file/xnEhlyaTv8BRZsKZWW6CsN/PKTV-IVIS?type=design&mode=dev&t=PQjzNvwdqETkqswU-1",
+        link_prototype: "https://www.figma.com/proto/xnEhlyaTv8BRZsKZWW6CsN/PKTV-IVIS?node-id=448-690&t=JS3lrI2hk8x6KjES-1&starting-point-node-id=360%3A1914",
         images: [
             { src: welcome, caption: "Welcome to IVIS system!" },
             { src: homepage4, caption: "The home page is displayed visually, users can use the map and turn music on and off. Also has location search feature." },
